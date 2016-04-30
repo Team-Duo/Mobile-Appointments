@@ -9,7 +9,7 @@ body{
   font-family: "Lato", sans-serif;
 }
 
-//Title
+// Title
 
 .main-header{
   width: 96%;
@@ -38,7 +38,7 @@ body{
 
 .search-bar{
   margin-top: 60px;
-  .search-input{
+  #search-input{
     border: 1px solid #999;
     width: 90%;
     margin-left: 5%;
@@ -168,7 +168,7 @@ body{
   }
 }
 
-.create-submit-btn{
+#create-submit-btn{
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -238,8 +238,8 @@ body{
   }
 }
 
-.edit-delete-btn,
-.edit-save-btn{
+#edit-delete-btn,
+#edit-save-btn{
   width: 50%;
   position: fixed;
   bottom: 0;
@@ -251,7 +251,7 @@ body{
   border-style: none;
 }
 
-.edit-delete-btn{
+#edit-delete-btn{
   right: 0;
   background: red;
 }
