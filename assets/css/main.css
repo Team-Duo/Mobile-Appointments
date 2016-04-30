@@ -203,4 +203,74 @@ body {
   right: 0;
   background: red; }
 
+.details-header {
+  width: 96%;
+  margin: auto;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #999;
+  color: #999;
+  text-align: center; }
+  .details-header h1 {
+    padding-left: 20px;
+    font-size: 75px;
+    display: inline-block; }
+  .details-header span {
+    float: left;
+    margin-left: 40px;
+    vertical-align: middle; }
+    .details-header span .fa {
+      padding-top: 18px;
+      padding-right: 20px;
+      color: #666; }
+
+.details-date-time {
+  margin-top: 200px;
+  font-size: 75px;
+  margin-left: 10%; }
+  .details-date-time span {
+    color: #55dcb8; }
+
+.details-location {
+  margin-top: 120px;
+  margin-left: 10%;
+  color: #999; }
+  .details-location div {
+    font-size: 65px;
+    font-style: italic; }
+  .details-location .fa {
+    float: right;
+    font-size: 80px;
+    color: #55dcb8;
+    margin-right: 140px; }
+
+.details-map {
+  width: 80%;
+  margin: 100px auto 60px auto;
+  height: 600px;
+  background: #ccc; }
+
+.details-weather {
+  background: #ddd;
+  width: 80%;
+  margin: auto;
+  font-size: 65px;
+  padding: 40px 0;
+  border-radius: 3px; }
+  .details-weather .fa {
+    margin: 0 20px 0 60px;
+    font-size: 80px;
+    color: white; }
+  .details-weather span {
+    margin-right: 25px; }
+
+.details-edit-btn {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 40px 0;
+  background: #55dcb8;
+  font-size: 70px;
+  color: white;
+  text-align: center; }
+
 /*# sourceMappingURL=main.css.map */
