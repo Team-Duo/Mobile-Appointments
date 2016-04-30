@@ -28,7 +28,7 @@ body {
 
 .search-bar {
   margin-top: 60px; }
-  .search-bar .search-input {
+  .search-bar #search-input {
     border: 1px solid #999;
     width: 90%;
     margin-left: 5%;
@@ -131,7 +131,7 @@ body {
     border: 1px solid #999;
     width: 100%; }
 
-.create-submit-btn {
+#create-submit-btn {
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -187,8 +187,8 @@ body {
     border: 1px solid #999;
     width: 100%; }
 
-.edit-delete-btn,
-.edit-save-btn {
+#edit-delete-btn,
+#edit-save-btn {
   width: 50%;
   position: fixed;
   bottom: 0;
@@ -199,7 +199,7 @@ body {
   padding: 60px 0;
   border-style: none; }
 
-.edit-delete-btn {
+#edit-delete-btn {
   right: 0;
   background: red; }
 
