@@ -131,7 +131,7 @@ body {
     border: 1px solid #999;
     width: 100%; }
 
-.submit-btn {
+.create-submit-btn {
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -139,7 +139,8 @@ body {
   background: #55dcb8;
   color: white;
   text-align: center;
-  padding: 60px 0; }
+  padding: 60px 0;
+  border-style: none; }
 
 .edit-header {
   width: 96%;
@@ -195,7 +196,8 @@ body {
   background: #55dcb8;
   color: white;
   text-align: center;
-  padding: 60px 0; }
+  padding: 60px 0;
+  border-style: none; }
 
 .edit-delete-btn {
   right: 0;
