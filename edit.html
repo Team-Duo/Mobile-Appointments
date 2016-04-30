@@ -1,0 +1,47 @@
+<!DOCTYPE>
+
+<html>
+  <head>
+    <title>Appointments</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+  </head>
+
+  <body>
+    <section class="container">
+      <header class="edit-header">
+        <span><a href="index.html"><i class="fa fa-chevron-left fa-4x" aria-hidden="true"></i></span></a><h1>Edit Appointment</h1>
+      </header>
+
+      <form>
+        <div class="edit-wrapper">
+          <label>Title</label>
+          <input class="edit-input" id="edit-title">
+        </div>
+        <div class="edit-wrapper">
+          <label>Street</label>
+          <input class="edit-input" id="edit-street">
+          <i class="fa fa-map-marker fa-4x" aria-hidden="true"></i>
+          <label>City, State</label>
+          <input class="edit-input" id="edit-city-state">
+        </div>
+        <div class="edit-wrapper">
+          <label>Date</label>
+          <input class="edit-input" id="edit-date">
+          <i class="fa fa-calendar fa-4x" aria-hidden="true"></i>
+        </div>
+        <div class="edit-wrapper">
+          <label>Time</label>
+          <input class="edit-input" id="edit-time">
+          <i class="fa fa-clock-o fa-4x" aria-hidden="true"></i>
+        </div>
+      </form>
+      <a href=""><div class="edit-delete-btn">Delete</div></a>
+      <a href=""><div class="edit-save-btn">Save</div></a>
+    </section>
+  </body>
+</html>

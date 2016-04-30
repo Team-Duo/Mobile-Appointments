@@ -141,4 +141,64 @@ body {
   text-align: center;
   padding: 60px 0; }
 
+.edit-header {
+  width: 96%;
+  margin: auto;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #999;
+  color: #999;
+  text-align: center; }
+  .edit-header h1 {
+    padding-left: 20px;
+    font-size: 75px;
+    display: inline-block; }
+  .edit-header span {
+    float: left;
+    margin-left: 40px;
+    vertical-align: middle; }
+    .edit-header span .fa {
+      padding-top: 18px;
+      padding-right: 20px;
+      color: #666; }
+
+.edit-wrapper {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 40px;
+  padding-bottom: 60px;
+  border-bottom: 2px solid #999; }
+  .edit-wrapper:last-child {
+    margin-bottom: 200px;
+    border-bottom: none; }
+  .edit-wrapper .fa {
+    position: absolute;
+    margin-top: -85px;
+    right: 8%;
+    color: #999; }
+  .edit-wrapper label {
+    font-size: 70px;
+    display: block;
+    color: #999;
+    margin: 25px 0 20px 0; }
+  .edit-wrapper input {
+    font-size: 70px;
+    line-height: 1.4;
+    border: 1px solid #999;
+    width: 100%; }
+
+.edit-delete-btn,
+.edit-save-btn {
+  width: 50%;
+  position: fixed;
+  bottom: 0;
+  font-size: 80px;
+  background: #55dcb8;
+  color: white;
+  text-align: center;
+  padding: 60px 0; }
+
+.edit-delete-btn {
+  right: 0;
+  background: red; }
+
 /*# sourceMappingURL=main.css.map */
