@@ -1,6 +1,9 @@
 .container {
   margin-top: 40px; }
 
+a {
+  text-decoration: none; }
+
 .main-header {
   width: 96%;
   margin: auto;
@@ -34,5 +37,49 @@
     position: absolute;
     margin-left: -90px;
     margin-top: 25px; }
+
+.appointment-wrapper {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 90px;
+  font-size: 60px; }
+
+.appointment {
+  margin-bottom: 60px; }
+
+.left-box {
+  height: 150px;
+  padding: 25px;
+  width: 25%;
+  background: #55dcb8;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top; }
+
+.appt-time {
+  color: white; }
+
+.invisDate {
+  display: none; }
+
+.fa-sun-o {
+  color: yellow;
+  padding-top: 15px; }
+
+.right-box {
+  height: 150px;
+  padding: 25px;
+  width: 63%;
+  display: inline-block;
+  vertical-align: top;
+  background: #eee;
+  color: black; }
+
+.invisStreet {
+  display: none; }
+
+.city-state {
+  margin-top: 25px;
+  color: #999; }
 
 /*# sourceMappingURL=main.css.map */
