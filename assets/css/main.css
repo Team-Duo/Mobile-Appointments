@@ -45,6 +45,8 @@ a {
   font-size: 60px; }
 
 .appointment {
+  width: 95%;
+  margin: auto;
   margin-bottom: 60px; }
 
 .left-box {
