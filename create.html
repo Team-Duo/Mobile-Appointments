@@ -1,0 +1,46 @@
+<!DOCTYPE>
+
+<html>
+  <head>
+    <title>Appointments</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+  </head>
+
+  <body>
+    <section class="container">
+      <header class="create-header">
+        <span><a href="index.html"><i class="fa fa-chevron-left fa-4x" aria-hidden="true"></i></span></a><h1>New Appointment</h1>
+      </header>
+
+      <form>
+        <div class="create-wrapper">
+          <label>Title</label>
+          <input class="create-input" id="create-title">
+        </div>
+        <div class="create-wrapper">
+          <label>Street</label>
+          <input class="create-input" id="create-street">
+          <i class="fa fa-map-marker fa-4x" aria-hidden="true"></i>
+          <label>City, State</label>
+          <input class="create-input" id="create-city-state">
+        </div>
+        <div class="create-wrapper">
+          <label>Date</label>
+          <input class="create-input" id="create-date">
+          <i class="fa fa-calendar fa-4x" aria-hidden="true"></i>
+        </div>
+        <div class="create-wrapper">
+          <label>Time</label>
+          <input class="create-input" id="create-time">
+          <i class="fa fa-clock-o fa-4x" aria-hidden="true"></i>
+        </div>
+      </form>
+      <a href=""><div class="submit-btn">Save Appointment</div></a>
+    </section>
+  </body>
+</html>
