@@ -2,15 +2,15 @@ $(function () {
   'use strict';
 
   // save appointment when button is clicked
-  $(".createFootButton").on("click", function(){
+  $("#create-submit-btn").on("click", function(){
 
     var myAppt = new Appointment("appt" + parseInt(localStorage.length + 1, 10));
 
-    myAppt.apptTitle = $("#inputTitle").val();
-    myAppt.appointmentDate = $("#inputDate").val();
-    myAppt.street = $("#inputStreet").val();
-    myAppt.city = $("#inputCityState").val();
-    myAppt.state = $("#inputCityState").val();
+    myAppt.apptTitle = $("#create-title").val();
+    myAppt.appointmentDate = $("#create-date").val();
+    myAppt.street = $("#create-street").val();
+    myAppt.city = $("#create-city-state").val();
+    myAppt.state = $("#create-city-state").val();
     myAppt.temperature = "55"
     myAppt.desciption = "mostly cloudy"
     myAppt.weatherType = "10b"
@@ -19,7 +19,7 @@ $(function () {
     window.localStorage.setItem(myAppt.apptId, JSON.stringify(myAppt));
     console.log("** localStorage.setItem **");
 
-    $("#createForm").submit();
+    $("#create-form").submit();
   });
 
   // var queryString = window.location.search;
@@ -87,17 +87,17 @@ $(function () {
 // console.log("** localStorage.setItem **");
 
 // read from localStorage
-var myOtherAppt = JSON.parse(localStorage.getItem("appt01"));
+var myOtherAppt = JSON.parse(localStorage.getItem("app01"));
 console.log("** localStorage.getItem **");
 console.log(myOtherAppt);
 
 
 // var myUser = "octocat";
 
-var apiString = "http://api.openweathermap.org/data/2.5/forecast/daily?" +
-                "id=4464368" +    // Durham, NC, US
-                "&cnt=1" +        // 1 record from 5 Day, 3 Hour Forecast
-                "&APPID=82f61d5df7730f4b96d58ed8e8aa6b63";
+// var apiString = "http://api.openweathermap.org/data/2.5/forecast/daily?" +
+//                 "id=4464368" +    // Durham, NC, US
+//                 "&cnt=1" +        // 1 record from 5 Day, 3 Hour Forecast
+//                 "&APPID=82f61d5df7730f4b96d58ed8e8aa6b63";
 
 // $.getJSON(("apis/github/users/octocat.json"), function (value) {
 // $.getJSON((apiString), function (value) {
