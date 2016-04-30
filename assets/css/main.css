@@ -1,0 +1,38 @@
+.container {
+  margin-top: 40px; }
+
+.main-header {
+  width: 96%;
+  margin: auto;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #999;
+  font-family: Helvetica;
+  color: #55dcb8;
+  text-align: center; }
+  .main-header h1 {
+    padding-left: 20px;
+    font-size: 75px;
+    display: inline-block; }
+  .main-header span {
+    float: right;
+    vertical-align: baseline; }
+    .main-header span .fa {
+      padding-top: 18px;
+      padding-right: 20px;
+      color: #666; }
+
+.search-bar {
+  margin-top: 60px; }
+  .search-bar .search-input {
+    border: 1px solid #999;
+    width: 90%;
+    margin-left: 5%;
+    font-size: 70px;
+    line-height: 1.6; }
+  .search-bar .fa {
+    color: #999;
+    position: absolute;
+    margin-left: -90px;
+    margin-top: 25px; }
+
+/*# sourceMappingURL=main.css.map */
