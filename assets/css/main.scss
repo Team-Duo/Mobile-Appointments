@@ -5,6 +5,9 @@
 a{
   text-decoration: none;
 }
+body{
+  font-family: "Lato", sans-serif;
+}
 
 //Title
 
@@ -13,7 +16,6 @@ a{
   margin: auto;
   padding-bottom: 30px;
   border-bottom: 2px solid #999;
-  font-family: Helvetica;
   color: rgb(85, 220, 184);
   text-align: center;
   h1{

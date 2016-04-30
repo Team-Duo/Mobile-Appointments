@@ -4,12 +4,14 @@
 a {
   text-decoration: none; }
 
+body {
+  font-family: "Lato", sans-serif; }
+
 .main-header {
   width: 96%;
   margin: auto;
   padding-bottom: 30px;
   border-bottom: 2px solid #999;
-  font-family: Helvetica;
   color: #55dcb8;
   text-align: center; }
   .main-header h1 {
