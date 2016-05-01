@@ -16,8 +16,9 @@ $(function () {
     myAppt.weatherType = "10b"
     console.log(myAppt);
 
-    window.localStorage.setItem(myAppt.apptId, JSON.stringify(myAppt));
-    console.log("** localStorage.setItem **");
+    // window.localStorage.setItem(myAppt.apptId, JSON.stringify(myAppt));
+    // console.log("** localStorage.setItem **");
+    store(myAppt.apptId, myAppt);
 
     $("#create-form").submit();
   });
@@ -78,7 +79,7 @@ $(function () {
 // myAppt.city = "Norfolk";
 // myAppt.state = "VA";
 // myAppt.temperature = 55;
-// myAppt.desciption = "Cold as ****!";
+// myAppt.desciption = "Cold!";
 // myAppt.weatherType = "rainy";
 // console.log(myAppt);
 
@@ -87,7 +88,7 @@ $(function () {
 // console.log("** localStorage.setItem **");
 
 // read from localStorage
-var myOtherAppt = JSON.parse(localStorage.getItem("app01"));
+var myOtherAppt = JSON.parse(localStorage.getItem("appt9"));
 console.log("** localStorage.getItem **");
 console.log(myOtherAppt);
 
@@ -134,3 +135,11 @@ console.log(myOtherAppt);
 // });   // end JSON
 
 });  // End of file.
+
+/*
+*
+*/
+function store(apptId, apptObj) {
+  window.localStorage.setItem(apptId, JSON.stringify(apptObj));
+  console.log("** put : apptId =>  apptId **");
+}
