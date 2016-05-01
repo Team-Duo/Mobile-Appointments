@@ -44,58 +44,10 @@ $(function () {
   // console.log(myApptSeed);
   // store(myApptSeed.apptId, myApptSeed);
 
-// write to locaStorage
-// window.localStorage.setItem(myAppt.apptTitle, JSON.stringify(myAppt));
-// console.log("** localStorage.setItem **");
+  // console.log(retrieve("appt5"));
 
-// read from localStorage
-// var myOtherAppt = JSON.parse(localStorage.getItem("appt9"));
-// console.log("** localStorage.getItem **");
-// console.log(myOtherAppt);
-console.log(retrieve("appt5"));
 
-// var myUser = "octocat";
-
-// var apiString = "http://api.openweathermap.org/data/2.5/forecast/daily?" +
-//                 "id=4464368" +    // Durham, NC, US
-//                 "&cnt=1" +        // 1 record from 5 Day, 3 Hour Forecast
-//                 "&APPID=82f61d5df7730f4b96d58ed8e8aa6b63";
-
-// $.getJSON(("apis/github/users/octocat.json"), function (value) {
-// $.getJSON((apiString), function (value) {
-//
-//   console.log(apiString);
-//   console.log(value);
-//
-//   var myUserTemp = _.template("<%- m.name %> "
-//                             + "<%- m.date %> "
-//                             + "<%- m.count %> "
-//                             + "<%- m.maxTemp %> "
-//                             + "<%- m.weatherType %> "
-//                             + "<%- m.description %> "
-//                             + "<%- m.iconCode %> ", {variable: "m"});
-//
-//   console.log(myUserTemp({ name: value.city.name }));
-//   console.log(myUserTemp({ name: value.cnt }));
-//   console.log(myUserTemp({ name: value.list[0].dt }));
-//   console.log(myUserTemp({ name: value.list[0].temp.max }));
-//   console.log(myUserTemp({ name: value.list[0].weather[0].main }));
-//   console.log(myUserTemp({ name: value.list[0].weather[0].description }));
-//   console.log(myUserTemp({ name: value.list[0].weather[0].icon }));
-//
-// //   $("#profileImage").attr("src", myUserTemp({ name: value.avatar_url}));
-// //   $("#fullName").html(myUserTemp({ name: value.name}));
-// //   $("#loginId").html(myUserTemp({ name: value.login}));
-// //   $("#company").html(myUserTemp({ name: value.company}));
-// //   $("#userLocation").html(myUserTemp({ name: value.location}));
-// //   $("#emailAddress").html(myUserTemp({ name: value.email}));
-// //   $("#userURL").html(myUserTemp({ name: value.blog}));
-// //   $("#startDate").html(formatDate( myUserTemp({ name: value.created_at})));
-// //   $("#following").html(myUserTemp({ name: value.following}));
-// //   $("#followers").html(formatNumber( myUserTemp({ name: value.followers})));
-// });   // end JSON
-
-});  // End of file.
+});  // end of document.ready()
 
 /*
 *
