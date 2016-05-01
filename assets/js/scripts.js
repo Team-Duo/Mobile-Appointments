@@ -88,10 +88,10 @@ $(function () {
 // console.log("** localStorage.setItem **");
 
 // read from localStorage
-var myOtherAppt = JSON.parse(localStorage.getItem("appt9"));
-console.log("** localStorage.getItem **");
-console.log(myOtherAppt);
-
+// var myOtherAppt = JSON.parse(localStorage.getItem("appt9"));
+// console.log("** localStorage.getItem **");
+// console.log(myOtherAppt);
+console.log(retrieve("appt12"));
 
 // var myUser = "octocat";
 
@@ -141,5 +141,13 @@ console.log(myOtherAppt);
 */
 function store(apptId, apptObj) {
   window.localStorage.setItem(apptId, JSON.stringify(apptObj));
-  console.log("** put : apptId =>  apptId **");
+  console.log("** put : apptId => " + apptId + "**");
+}
+
+/*
+*
+*/
+function retrieve(apptId) {
+  console.log("** retrieve : apptId => " + apptId + "**");
+  return JSON.parse(localStorage.getItem(apptId));
 }
