@@ -23,65 +23,26 @@ $(function () {
     $("#create-form").submit();
   });
 
+  //  how to use parseQueryString() function
   // var queryString = window.location.search;
   // console.log("queryString = " + queryString);
   //
   // var parameters = parseQueryString(queryString);
   // console.log(parameters);
   //
-  // function parseQueryString( queryString ) {
-  //   var params = {} ;
-  //   var queries = [];
-  //   var temp = [];
-  //   // remove "?" character
-  //   queryString = queryString.substring(1);
-  //   // Split into key/value pairs
-  //   queries = queryString.split("&");
-  //   // Convert the array of strings into an object
-  //   $.each(queries, function(i) {
-  //       temp = queries[i].split('=');
-  //       params[temp[0]] = temp[1];  // tricky syntax params[] is the key
-  //     });
-  //   return params;
-  // };
 
 
-  function Appointment(id) {
-    this.apptId = id;
-    this.apptTitle = "";
-    this.createDate = new Date();
-    this.appointmentDate = null;
-    // location data
-    this.street = "";
-    this.city = "";
-    this.state = "";
-    // weather data
-    this.temperature = 0;
-    this.desciption = "";
-    this.weatherType = "";  // cloudy, rainy, sunny
-    // methods
-    // this.getInfo = function() {
-    //     return "title = " + this.aaptTitle + " \n" +
-    //            "create date = " + this.createDate + " \n" +
-    //            "appointment date = " + this.appointmentDate + "\n" +
-    //            "street = " + this.street + "\n" +
-    //            "city = " + this.city + "\n" +
-    //            "state = " + this.state + "\n" +
-    //            "temperature = " + this.temperature + "\n" +
-    //            "description = " + this.desciption + "\n" +
-    //            "weather type = " + this.weatherType + "\n";
-    // };
-}
-
-// var myAppt = new Appointment("app1");
-// myAppt.appointmentDate = new Date();
-// myAppt.street = "1212 Boogie Boogie Ave.";
-// myAppt.city = "Norfolk";
-// myAppt.state = "VA";
-// myAppt.temperature = 55;
-// myAppt.desciption = "Cold!";
-// myAppt.weatherType = "rainy";
-// console.log(myAppt);
+  // For adding appointments to localStorge for testing
+  // var myApptSeed = new Appointment("appt5");
+  // myApptSeed.appointmentDate = new Date();
+  // myApptSeed.street = "1212 Boogie Boogie Ave.";
+  // myApptSeed.city = "Norfolk";
+  // myApptSeed.state = "VA";
+  // myApptSeed.temperature = 55;
+  // myApptSeed.desciption = "Cold!";
+  // myApptSeed.weatherType = "rainy";
+  // console.log(myApptSeed);
+  // store(myApptSeed.apptId, myApptSeed);
 
 // write to locaStorage
 // window.localStorage.setItem(myAppt.apptTitle, JSON.stringify(myAppt));
@@ -91,7 +52,7 @@ $(function () {
 // var myOtherAppt = JSON.parse(localStorage.getItem("appt9"));
 // console.log("** localStorage.getItem **");
 // console.log(myOtherAppt);
-console.log(retrieve("appt12"));
+console.log(retrieve("appt5"));
 
 // var myUser = "octocat";
 
@@ -139,6 +100,36 @@ console.log(retrieve("appt12"));
 /*
 *
 */
+function Appointment(id) {
+  this.apptId = id;
+  this.apptTitle = "";
+  this.createDate = new Date();
+  this.appointmentDate = null;
+  // location data
+  this.street = "";
+  this.city = "";
+  this.state = "";
+  // weather data
+  this.temperature = 0;
+  this.desciption = "";
+  this.weatherType = "";  // cloudy, rainy, sunny
+  // methods
+  // this.getInfo = function() {
+  //     return "title = " + this.aaptTitle + " \n" +
+  //            "create date = " + this.createDate + " \n" +
+  //            "appointment date = " + this.appointmentDate + "\n" +
+  //            "street = " + this.street + "\n" +
+  //            "city = " + this.city + "\n" +
+  //            "state = " + this.state + "\n" +
+  //            "temperature = " + this.temperature + "\n" +
+  //            "description = " + this.desciption + "\n" +
+  //            "weather type = " + this.weatherType + "\n";
+  // };
+}
+
+/*
+*
+*/
 function store(apptId, apptObj) {
   window.localStorage.setItem(apptId, JSON.stringify(apptObj));
   console.log("** put : apptId => " + apptId + "**");
@@ -151,3 +142,22 @@ function retrieve(apptId) {
   console.log("** retrieve : apptId => " + apptId + "**");
   return JSON.parse(localStorage.getItem(apptId));
 }
+
+/*
+*
+*/
+function parseQueryString(queryString) {
+  var params = {} ;
+  var queries = [];
+  var temp = [];
+  // remove "?" character
+  queryString = queryString.substring(1);
+  // Split into key/value pairs
+  queries = queryString.split("&");
+  // Convert the array of strings into an object
+  $.each(queries, function(i) {
+      temp = queries[i].split('=');
+      params[temp[0]] = temp[1];  // tricky syntax params[] is the key
+    });
+  return params;
+};
