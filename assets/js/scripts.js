@@ -100,8 +100,8 @@ console.log(retrieve("appt5"));
 /*
 *
 */
-function Appointment(id) {
-  this.apptId = id;
+function Appointment(apptId) {
+  this.apptId = apptId;
   this.apptTitle = "";
   this.createDate = new Date();
   this.appointmentDate = null;
@@ -131,16 +131,25 @@ function Appointment(id) {
 *
 */
 function store(apptId, apptObj) {
+  console.log("** store() : apptId => " + apptId + " **");
   window.localStorage.setItem(apptId, JSON.stringify(apptObj));
-  console.log("** put : apptId => " + apptId + "**");
 }
+
 
 /*
 *
 */
 function retrieve(apptId) {
-  console.log("** retrieve : apptId => " + apptId + "**");
-  return JSON.parse(localStorage.getItem(apptId));
+  console.log("** retrieve() : apptId => " + apptId + " **");
+  return JSON.parse(window.localStorage.getItem(apptId));
+}
+
+/*
+*
+*/
+function remove(apptId) {
+  console.log("** delete() : apptId => " + apptId + " **");
+  window.localStorage.removeItem(apptId);
 }
 
 /*
