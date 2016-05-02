@@ -243,7 +243,7 @@ body {
     color: #55dcb8;
     margin-right: 140px; }
 
-.details-map {
+#details-map {
   width: 80%;
   margin: 100px auto 60px auto;
   height: 600px;
