@@ -16,7 +16,7 @@ body {
   text-align: center; }
   .main-header h1 {
     padding-left: 20px;
-    font-size: 40px;
+    font-size: 45px;
     display: inline-block; }
   .main-header span {
     float: right;
@@ -33,7 +33,7 @@ body {
     width: 90%;
     margin-left: 5%;
     font-size: 35px;
-    line-height: 1.6; }
+    line-height: 1.4; }
   .search-bar .fa {
     color: #999;
     position: absolute;
