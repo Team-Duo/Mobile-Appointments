@@ -1,5 +1,5 @@
 .container {
-  margin-top: 40px; }
+  margin-top: 10px; }
 
 a {
   text-decoration: none; }
@@ -10,49 +10,49 @@ body {
 .main-header {
   width: 96%;
   margin: auto;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   border-bottom: 2px solid #999;
   color: #55dcb8;
   text-align: center; }
   .main-header h1 {
     padding-left: 20px;
-    font-size: 75px;
+    font-size: 40px;
     display: inline-block; }
   .main-header span {
     float: right;
     vertical-align: baseline; }
     .main-header span .fa {
-      padding-top: 18px;
+      padding-top: 9px;
       padding-right: 20px;
       color: #666; }
 
 .search-bar {
-  margin-top: 60px; }
+  margin-top: 35px; }
   .search-bar #search-input {
     border: 1px solid #999;
     width: 90%;
     margin-left: 5%;
-    font-size: 70px;
+    font-size: 35px;
     line-height: 1.6; }
   .search-bar .fa {
     color: #999;
     position: absolute;
-    margin-left: -90px;
-    margin-top: 25px; }
+    margin-left: -50px;
+    margin-top: 10px; }
 
 .appointment-wrapper {
   width: 90%;
   margin-left: 5%;
-  margin-top: 90px;
-  font-size: 60px; }
+  margin-top: 45px;
+  font-size: 30px; }
 
 .appointment {
   width: 95%;
   margin: auto;
-  margin-bottom: 60px; }
+  margin-bottom: 30px; }
 
 .left-box {
-  height: 150px;
+  height: 75px;
   padding: 25px;
   width: 25%;
   background: #55dcb8;
@@ -71,9 +71,10 @@ body {
   padding-top: 15px; }
 
 .right-box {
-  height: 150px;
-  padding: 25px;
-  width: 63%;
+  font-size: 25px;
+  height: 85px;
+  padding: 20px;
+  width: 48%;
   display: inline-block;
   vertical-align: top;
   background: #eee;
@@ -82,51 +83,55 @@ body {
 .invisStreet {
   display: none; }
 
+.appt-title {
+  margin-top: 7px; }
+
 .city-state {
-  margin-top: 25px;
+  margin-top: 15px;
+  font-size: 20px;
   color: #999; }
 
 .create-header {
   width: 96%;
   margin: auto;
   padding-bottom: 30px;
-  border-bottom: 2px solid #999;
-  color: #999;
+  border-bottom: 2px solid #ccc;
+  color: #666;
   text-align: center; }
   .create-header h1 {
-    margin-left: -80px;
-    font-size: 75px;
+    margin-left: -40px;
+    margin-top: 5px;
+    font-size: 32px;
     display: inline-block; }
   .create-header span {
     float: left;
-    margin-left: 40px;
+    margin-left: 10px;
     vertical-align: middle; }
     .create-header span .fa {
-      margin-top: 10px;
+      margin-top: 7px;
       padding-right: 20px;
       color: #666; }
 
 .create-wrapper {
   width: 90%;
   margin-left: 5%;
-  margin-top: 40px;
-  padding-bottom: 60px;
-  border-bottom: 2px solid #999; }
+  padding-bottom: 30px;
+  border-bottom: 2px solid #ccc; }
   .create-wrapper:last-child {
-    margin-bottom: 200px;
+    margin-bottom: 80px;
     border-bottom: none; }
   .create-wrapper .fa {
     position: absolute;
-    margin-top: -85px;
+    margin-top: -40px;
     right: 8%;
     color: #999; }
   .create-wrapper label {
-    font-size: 70px;
+    font-size: 30px;
     display: block;
     color: #999;
-    margin: 40px 0 20px 0; }
+    margin: 20px 0 10px 0; }
   .create-wrapper input {
-    font-size: 70px;
+    font-size: 30px;
     line-height: 1.4;
     border: 1px solid #999;
     width: 100%; }
@@ -135,54 +140,54 @@ body {
   width: 100%;
   position: fixed;
   bottom: 0;
-  font-size: 80px;
+  font-size: 40px;
   background: #55dcb8;
   color: white;
   text-align: center;
-  padding: 60px 0;
+  padding: 20px 0;
   border-style: none; }
 
 .edit-header {
   width: 96%;
   margin: auto;
   padding-bottom: 30px;
-  border-bottom: 2px solid #999;
-  color: #999;
+  border-bottom: 2px solid #ccc;
+  color: #666;
   text-align: center; }
   .edit-header h1 {
-    margin-left: -80px;
-    font-size: 75px;
+    margin-left: -40px;
+    margin-top: 5px;
+    font-size: 32px;
     display: inline-block; }
   .edit-header span {
     float: left;
-    margin-left: 40px;
+    margin-left: 10px;
     vertical-align: middle; }
     .edit-header span .fa {
-      margin-top: 10px;
+      margin-top: 7px;
       padding-right: 20px;
       color: #666; }
 
 .edit-wrapper {
   width: 90%;
   margin-left: 5%;
-  margin-top: 40px;
-  padding-bottom: 60px;
-  border-bottom: 2px solid #999; }
+  padding-bottom: 30px;
+  border-bottom: 2px solid #ccc; }
   .edit-wrapper:last-child {
-    margin-bottom: 200px;
+    margin-bottom: 80px;
     border-bottom: none; }
   .edit-wrapper .fa {
     position: absolute;
-    margin-top: -85px;
+    margin-top: -40px;
     right: 8%;
     color: #999; }
   .edit-wrapper label {
-    font-size: 70px;
+    font-size: 30px;
     display: block;
     color: #999;
-    margin: 40px 0 20px 0; }
+    margin: 20px 0 10px 0; }
   .edit-wrapper input {
-    font-size: 70px;
+    font-size: 30px;
     line-height: 1.4;
     border: 1px solid #999;
     width: 100%; }
@@ -192,11 +197,11 @@ body {
   width: 50%;
   position: fixed;
   bottom: 0;
-  font-size: 80px;
+  font-size: 40px;
   background: #55dcb8;
   color: white;
   text-align: center;
-  padding: 60px 0;
+  padding: 20px 0;
   border-style: none; }
 
 #edit-delete-btn {
@@ -206,70 +211,71 @@ body {
 .details-header {
   width: 96%;
   margin: auto;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   border-bottom: 2px solid #999;
   color: #999;
   text-align: center; }
   .details-header h1 {
-    margin-left: -100px;
-    font-size: 75px;
+    margin-top: 1px;
+    margin-left: -60px;
+    font-size: 35px;
     display: inline-block; }
   .details-header span {
     float: left;
     margin-left: 40px;
     vertical-align: middle; }
     .details-header span .fa {
-      padding-top: 18px;
+      padding-top: 5px;
       padding-right: 20px;
       color: #666; }
 
 .details-date-time {
-  margin-top: 200px;
-  font-size: 75px;
+  margin-top: 40px;
+  font-size: 30px;
   margin-left: 10%; }
   .details-date-time span {
     color: #55dcb8; }
 
 .details-location {
-  margin-top: 120px;
+  margin-top: 40px;
   margin-left: 10%;
   color: #999; }
   .details-location div {
-    font-size: 65px;
+    font-size: 25px;
     font-style: italic; }
   .details-location .fa {
     float: right;
-    font-size: 80px;
+    font-size: 30px;
     color: #55dcb8;
-    margin-right: 140px; }
+    margin-right: 60px; }
 
 #details-map {
   width: 80%;
-  margin: 100px auto 60px auto;
-  height: 600px;
+  margin: 40px auto 20px auto;
+  height: 300px;
   background: #ccc; }
 
 .details-weather {
   background: #ddd;
   width: 80%;
   margin: auto;
-  font-size: 65px;
-  padding: 40px 0;
+  font-size: 28px;
+  padding: 10px 0;
   border-radius: 3px; }
   .details-weather .fa {
-    margin: 0 20px 0 60px;
-    font-size: 80px;
+    margin: 0 30px 0 20px;
+    font-size: 40px;
     color: white; }
   .details-weather span {
-    margin-right: 25px; }
+    margin-right: 15px; }
 
 .details-edit-btn {
   width: 100%;
   position: fixed;
   bottom: 0;
-  padding: 40px 0;
+  padding: 20px 0;
   background: #55dcb8;
-  font-size: 70px;
+  font-size: 40px;
   color: white;
   text-align: center; }
 
