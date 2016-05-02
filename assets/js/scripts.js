@@ -1,9 +1,6 @@
 $(function () {
   'use strict';
 
-  // initialize Google Maps
-  // initialize();
-
   // save appointment when button is clicked
   $("#create-submit-btn").on("click", function(){
 
