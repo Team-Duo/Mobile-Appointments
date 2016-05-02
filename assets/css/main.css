@@ -50,9 +50,9 @@ body {
   margin-bottom: 30px; }
 
 .left-box {
-  height: 105px;
-  padding: 20px 5% 0 5%;
-  width: 25%;
+  height: 100px;
+  padding: 20px 0 0 0;
+  width: 35%;
   background: #55dcb8;
   text-align: center;
   display: inline-block;
@@ -70,8 +70,8 @@ body {
 
 .right-box {
   font-size: 25px;
-  height: 85px;
-  padding: 20px 0 20px 5%;
+  height: 100px;
+  padding: 20px 0 0 5%;
   width: 60%;
   display: inline-block;
   vertical-align: top;
