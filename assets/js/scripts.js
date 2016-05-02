@@ -23,7 +23,9 @@ $(function () {
     $("#create-form").submit();
   });
 
-  //  how to use parseQueryString() function
+  /*
+  * how to use parseQueryString() function
+  */
   // var queryString = window.location.search;
   // console.log("queryString = " + queryString);
   //
@@ -31,9 +33,10 @@ $(function () {
   // console.log(parameters);
   //
 
-
-  // For adding appointments to localStorge for testing
-  // var myApptSeed = new Appointment("appt5");
+  /*
+  * For adding appointments to localStorge for testing
+  */
+  //var myApptSeed = new Appointment("appt5");
   // myApptSeed.appointmentDate = new Date();
   // myApptSeed.street = "1212 Boogie Boogie Ave.";
   // myApptSeed.city = "Norfolk";
@@ -46,6 +49,7 @@ $(function () {
 
   // console.log(retrieve("appt5"));
 
+  getWeather("Apex, NC");
 
 });  // end of document.ready()
 
@@ -122,3 +126,52 @@ function parseQueryString(queryString) {
     });
   return params;
 };
+
+/*
+* str = 'City, State' for example 'Boston, MA'
+*/
+function getWeather(str) {
+
+  var apiURL = "",
+      htmlStr = "",
+      windStr = "",
+      cityStr = "",
+      locationStr = "";
+
+  if (str !== undefined && str.length > 5 && str.indexOf(", ") >= 0) {
+
+    cityStr = str.split(", ")[0].replace(" ","_");
+    locationStr = str.split(", ")[1].toUpperCase();
+    apiURL += "http://api.wunderground.com/api/bb07f40ea899d427/conditions/q/" +
+              locationStr +  "/" + cityStr + ".json";
+
+    console.log(apiURL);
+
+    $.getJSON(apiURL)
+
+      .done( function (data) {
+        // console.log(value);
+        // console.log(value.response.error);
+        if (data.response.error !== undefined) {
+          console.log("ERROR => getWeather() => " + data.response.error.type);
+        } else {
+          htmlStr +=
+            data.current_observation.display_location.full + "\n" +
+            data.current_observation.temperature_string + "\n" +
+            data.current_observation.weather + "\n" +
+            data.current_observation.icon_url + "\n";
+
+          windStr += data.current_observation.wind_string
+          if ( windStr !== "NA" && windStr.length > 0 ) {
+            htmlStr += windStr.charAt(0).toLowerCase() + windStr.slice(1) + " winds\n";
+          }
+        }
+        console.log(htmlStr);
+      })  // end .done()
+
+      .fail( function(data) {
+        console.log('$.getJSON() => Error!', data);
+      });  // end .fail()
+
+  }
+}
