@@ -5,12 +5,23 @@ $(function () {
 });  // end of document.ready()
 
 /*
+* global variables
+*/
+// Apex, NC
+// var lat = 35.732,
+//     lng = -78.850;
+// Landstuhl, Germany
+var lat = 49.412,
+    lng = 7.572;
+
+
+/*
 * initial mutiple Google Maps
 */
 function initMap()
 {
     // var durham = new google.maps.LatLng(35.994,-78.898);
-    var apex = new google.maps.LatLng(35.732,-78.850);
+    var apex = new google.maps.LatLng(lat,lng);
     // var landstuhl = new google.maps.LatLng(49.412,7.572);
 
     // var myOptions1 =
@@ -60,4 +71,30 @@ function initMap()
     //     map: myMap3,
     //     title:"Landstuhl"
     // });
+
+      var geocoder = new google.maps.Geocoder();
+
+      // document.getElementById('submit').addEventListener('click', function() {
+          geocodeAddress(geocoder, myMap2);
+      // });
+
   }
+
+  /*
+  * google maps docs - simple geocoding
+  */
+  function geocodeAddress(geocoder, resultsMap) {
+    // need to pull address from submitted params
+        var address = document.getElementById('address').value;
+        geocoder.geocode({'address': address}, function(results, status) {
+          if (status === google.maps.GeocoderStatus.OK) {
+            resultsMap.setCenter(results[0].geometry.location);
+            var marker = new google.maps.Marker({
+              map: resultsMap,
+              position: results[0].geometry.location
+            });
+          } else {
+            alert('Geocode was not successful for the following reason: ' + status);
+          }
+        });
+      }

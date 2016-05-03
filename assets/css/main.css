@@ -245,9 +245,11 @@ body {
 
 #details-map {
   width: 80%;
-  margin: 100px auto 60px auto;
-  height: 600px;
-  background: #ccc; }
+  margin: 40px auto 20px auto;
+  height: 300px;
+  background: #ccc;
+  border-radius: 3px; }
+
 
 .details-weather {
   background: #ddd;

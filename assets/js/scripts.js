@@ -1,3 +1,11 @@
+// Need to:
+//     * add <form> to index.html to submit full address to details.html
+//     * add geocoding & dynamic lat/long maps - basic maps work
+//     * add jQuery to display appoinment list in index.html
+//     * document code
+//     * display weather - JSON call works
+//
+
 $(function () {
   'use strict';
 
@@ -49,7 +57,7 @@ $(function () {
 
   // console.log(retrieve("appt5"));
 
-  getWeather("Apex, NC");
+  // getWeather("Apex, NC");
 
 });  // end of document.ready()
 
@@ -170,7 +178,7 @@ function getWeather(str) {
       })  // end .done()
 
       .fail( function(data) {
-        console.log('$.getJSON() => Error!', data);
+        console.log("ERROR => $.getJSON() => ", data);
       });  // end .fail()
 
   }
